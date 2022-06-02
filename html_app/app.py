@@ -1,6 +1,7 @@
 import flask
 import pandas as pan
 import numpy as np
+import PIL
 from PIL import Image
 import joblib
 import math
@@ -25,6 +26,7 @@ def main():
         df = pan.DataFrame(coords, columns=['lat','long'])
         # Get the predictions
         raw_image = Image.open(filepath)
+        raw_image = raw_image.resize(size=(256,256),resample=PIL.Image.BICUBIC)
         img = np.asarray(raw_image)
         img = img.astype('float32')
         img /= 255.
