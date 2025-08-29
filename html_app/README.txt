@@ -8,8 +8,8 @@ IMPORTANT: the python dependencies for executing this html script are:
 			PIL		pip install pillow
 			joblib		pip install joblib
 			math		pip install math
-			easygui		pip install easygui
-			tensorflow	pip install tensorflow
+			easygui		pip install
+			tensorflow	pip install
 
 To run this html script: 
 		1) change the current working directory to C:/.../html_app.
